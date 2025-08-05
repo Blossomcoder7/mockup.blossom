@@ -202,7 +202,7 @@ const BannerSection = () => {
             className="absolute pointer-events-none top-0 left-0 z-3 cursor-pointer hidden sm:flex w-fit h-fit justify-center items-center "
             //   onClick={() => alert("hi")}
           >
-            <div className="bg-mw-green-light h-[130px] w-[130px] rounded-full font-bold text-[#053333]">
+            <div className="bg-mw-green-light h-[130px] w-[130px] rounded-full font-bold text-white">
               <div className="w-full h-full flex justify-center items-center text-base">
                 Let’s talk
               </div>

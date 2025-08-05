@@ -108,7 +108,7 @@ const NavBar = () => {
 
                   {/* Icons */}
                   <div className="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-6">
-                    <div className="flex font-bold text-sm lg:text-base bg-mw-green-light text-[#053333] px-6 py-2 rounded-full cursor-pointer border-2 border-transparent transition duration-200  hover:text-mw-green-light hover:border-mw-green-dark hover:bg-mw-green-dark">
+                    <div className="flex font-bold text-sm lg:text-base bg-mw-green-light text-white px-6 py-2 rounded-full cursor-pointer border-2 border-transparent transition duration-200  hover:text-mw-green-light hover:border-white hover:bg-white">
                       Let’s talk
                     </div>
                   </div>
