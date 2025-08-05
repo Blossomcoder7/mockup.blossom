@@ -20,7 +20,7 @@ function HideOnScroll(props: {
     target: window ? window() : undefined,
   });
   return (
-    <Slide appear={true} direction="down" in={true}>
+    <Slide appear={false} direction="down" in={!trigger}>
       {children}
     </Slide>
   );
