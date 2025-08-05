@@ -51,14 +51,15 @@ const NavBar = () => {
         <XSpacing>
           <div className="flex items-center justify-between w-full relative z-2 rounded-md  ">
             {/* Mobile logo */}
-            <div className="lg:hidden">
-              <img
+            <div className="lg:hidden flex h-[72px] w-[200px] items-center justify-center min-w-fit">
+              {/* <img
                 src={logo}
                 alt="logo"
                 height={32}
                 width={170}
                 className="object-contain object-center"
-              />
+              /> */}
+              <Logo />
             </div>
             {/* Right section with Drawer/Menu */}
             <div className="w-fit lg:w-full h-">
