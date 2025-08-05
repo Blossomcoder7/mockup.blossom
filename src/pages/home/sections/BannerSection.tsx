@@ -5,6 +5,7 @@ import useFollowMouseLocation from "../../../hooks/animated/useFollowMouseLocati
 import XSpacing from "../../../components/wrapper/XSpacing";
 import bg from "/assets/images/white-favicon.png";
 import useScreenSize from "../../../hooks/animated/useScreenSize";
+import CircleElement from "../../../components/ui/CircleElement";
 const BannerSection = () => {
   const containerEl = useRef<HTMLDivElement>(null);
   const xBoxEl = useRef<HTMLDivElement>(null);
@@ -39,11 +40,11 @@ const BannerSection = () => {
   const scale = useTransform(speed, [0, 1000], [1, 1.5], {
     clamp: true,
   });
-  
+
   return (
     <>
       <div className="relative cursor-pointer bg-mw-black  w-full h-[clamp(700px,95svh,1200px)] text-white flex justify-center items-center">
-        <motion.div className="absolute hidden w-full h-full inset-0">
+        <motion.div className="absolute  w-full h-full inset-0">
           <video
             src="https://www.markaworks.com/wp-content/uploads/2020/11/optimize.mp4"
             autoPlay
@@ -202,10 +203,8 @@ const BannerSection = () => {
             className="absolute pointer-events-none top-0 left-0 z-3 cursor-pointer hidden sm:flex w-fit h-fit justify-center items-center "
             //   onClick={() => alert("hi")}
           >
-            <div className="bg-mw-green-light h-[130px] w-[130px] rounded-full font-bold text-white">
-              <div className="w-full h-full flex justify-center items-center text-base">
-                Let’s talk
-              </div>
+            <div className="h-[130px] w-[130px] rounded-full font-bold ">
+              <CircleElement  className="w-full h-full ">Coder</CircleElement>
             </div>
           </motion.div>
         </div>

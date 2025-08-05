@@ -13,6 +13,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "motion/react";
+import Logo from "./Logo";
 
 const NavBar = () => {
   const drawerEl = useRef<DrawerRefType>(null);
@@ -40,7 +41,7 @@ const NavBar = () => {
     <MagicScrollWrapper>
       <nav
         className={clsx(
-          " navbar w-full lg:py-4 bg-black items-center relative  justify-center flex   text-mw-sm overflow-hidden h-full"
+          " navbar w-full lg:py-4  items-center relative  justify-center flex   text-mw-sm overflow-hidden h-full"
         )}
       >
         <motion.div
@@ -79,14 +80,8 @@ const NavBar = () => {
               >
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full h-full  lg:mt-0 space-y-6 lg:space-y-0 ">
                   {/* Desktop Logo */}
-                  <div className="hidden lg:flex items-center justify-center w-fit">
-                    <img
-                      src={logo}
-                      alt="logo"
-                      height={72}
-                      width={200}
-                      className="object-contain object-center"
-                    />
+                  <div className="hidden lg:flex h-[72px] w-[200px] items-center justify-center min-w-fit">
+                    <Logo />
                   </div>
 
                   {/* Nav Links */}
