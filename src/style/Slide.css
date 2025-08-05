@@ -1,0 +1,21 @@
+.slide-left {
+  animation: slide-left 30s ease forwards infinite;
+}
+
+.slide-right {
+  animation: slide-right 30s ease forwards infinite;
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
